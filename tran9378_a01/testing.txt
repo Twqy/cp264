@@ -1,0 +1,92 @@
+Test: mychar
+
+Char    ASCII   MyType
+   2       50        0
+  digit_char_to_int: 2
+Char    ASCII   MyType
+   8       56        0
+  digit_char_to_int: 8
+Char    ASCII   MyType
+   A       65        4
+  caseflip: a
+Char    ASCII   MyType
+   a       97        4
+  caseflip: A
+Char    ASCII   MyType
+   z      122        4
+  caseflip: Z
+Char    ASCII   MyType
+   Z       90        4
+  caseflip: z
+Char    ASCII   MyType
+   +       43        1
+  operator
+Char    ASCII   MyType
+   -       45        1
+  operator
+Char    ASCII   MyType
+   (       40        2
+  left parenthesis: (
+Char    ASCII   MyType
+   )       41        3
+  right parenthesis: )
+Char    ASCII   MyType
+   $       36       -1
+  Not typed
+
+
+
+
+Test: power_overflow
+
+power_overflow(2 9): 0
+power_overflow(2 10): 0
+power_overflow(2 20): 0
+power_overflow(2 30): 0
+power_overflow(2 31): 1
+
+------------------
+Test: mypower
+
+mypower(2 2): 4
+mypower(2 4): 16
+mypower(2 6): 64
+mypower(2 8): 256
+mypower(2 10): 1024
+mypower(2 30): 1073741824
+mypower(3 2): 9
+mypower(3 4): 81
+mypower(3 6): 729
+mypower(3 8): 6561
+mypower(3 10): 59049
+mypower(3 30): 0
+
+------------------
+Test: powersum
+
+powersum(2 1): 3
+powersum(2 2): 7
+powersum(2 3): 15
+powersum(2 4): 31
+powersum(2 5): 63
+powersum(2 6): 127
+powersum(2 7): 255
+powersum(2 8): 511
+powersum(2 9): 1023
+powersum(2 10): 2047
+powersum(2 20): 2097151
+powersum(2 30): 2147483647
+powersum(2 31): 0
+powersum(3 1): 4
+powersum(3 2): 13
+powersum(3 3): 40
+powersum(3 4): 121
+powersum(3 5): 364
+powersum(3 6): 1093
+powersum(3 7): 3280
+powersum(3 8): 9841
+powersum(3 9): 29524
+powersum(3 10): 88573
+powersum(3 20): 0
+powersum(3 30): 0
+powersum(3 31): 0  
