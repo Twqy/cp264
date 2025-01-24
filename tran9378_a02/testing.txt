@@ -1,0 +1,120 @@
+Test: iterative_fibonacci
+
+iterative_fibonacci(0): 0
+iterative_fibonacci(1): 1
+iterative_fibonacci(2): 1
+iterative_fibonacci(3): 2
+iterative_fibonacci(4): 3
+iterative_fibonacci(5): 5
+
+------------------
+Test: recursive_fibonacci
+
+recursive_fibonacci(0): 0
+recursive_fibonacci(1): 1
+recursive_fibonacci(2): 1
+recursive_fibonacci(3): 2
+recursive_fibonacci(4): 3
+recursive_fibonacci(5): 5
+
+------------------
+Test: dpbu_fibonacci
+
+dpbu_fibonacci(0): 0
+dpbu_fibonacci(1): 1
+dpbu_fibonacci(2): 1
+dpbu_fibonacci(3): 2
+dpbu_fibonacci(4): 3
+dpbu_fibonacci(5): 5
+
+------------------
+Test: dptd_fibonacci
+
+dptd_fibonacci(0): 0
+dptd_fibonacci(1): 1
+dptd_fibonacci(2): 1
+dptd_fibonacci(3): 2
+dptd_fibonacci(4): 3
+dptd_fibonacci(5): 5
+------------------------------------------------------------------------------------------
+Test: horner
+
+p(x): 1.00*x^3+2.00*x^2+3.00*x^1+4.00
+horner(p 0.00): 4.00
+horner(p 1.00): 10.00
+horner(p 10.00): 1234.00
+
+------------------
+Test: derivative
+
+p'(x): 3.00*x^2+4.00*x^1+3.00
+------------------
+Test: newton
+
+p(-2.00): -2.00
+root: -1.65
+p(-1.65): 0.00
+p(-1.00): 2.00
+root: -1.65
+p(-1.65): 0.00
+------------------------------------------------------------------------------------------
+Test: norm
+
+v1:
+1.0
+2.0
+2.0
+
+norm(v1): 3.0
+------------------
+Test: dot_product
+
+v1:
+1.0
+1.0
+1.0
+
+v2:
+1.0
+2.0
+3.0
+
+dot_product(v1 v2): 6.0
+------------------
+Test: matrix_multiply_vector
+
+m:
+1.0 2.0 3.0
+4.0 5.0 6.0
+7.0 8.0 9.0
+
+v:
+1.0
+1.0
+1.0
+
+matrix_multiply_vector(m v v1)
+v1:
+6.0
+15.0
+24.0
+
+
+------------------
+Test: matrix_multiply_matrix
+
+m1:
+1.0 1.0 1.0
+1.0 1.0 1.0
+1.0 1.0 1.0
+
+m2:
+1.0 2.0 3.0
+4.0 5.0 6.0
+7.0 8.0 9.0
+
+matrix_multiply_matrix(m1 m2 m3)
+m3:
+12.0 15.0 18.0
+12.0 15.0 18.0
+12.0 15.0 18.0
