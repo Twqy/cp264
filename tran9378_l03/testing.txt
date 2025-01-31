@@ -1,0 +1,43 @@
+/**
+ * -------------------------------------
+ * @file  testing.txt
+ * Lab 3 Test Results File
+ * -------------------------------------
+ * @author name, id, email
+ *
+ * @version 2025-01-06
+ *
+ * -------------------------------------
+ */
+------------------
+Task 1
+Test: sum_integers
+
+Enter integers, one per line:
+: 1
+: 2
+: 3
+: a
+Sum: 6
+------------------
+Task 2
+Test: sum_three_integers
+
+Enter three comma-separated integers:
+: 1,2,3 
+Sum: 6
+
+---------------
+Task 3
+
+Test: int_array_read
+
+Enter 4 values for an array of int:
+Value for index 0: 1
+Value for index 1: 4
+Value for index 2: 6
+Value for index 3: 3
+{1, 4, 6, 3}
+
+
+
