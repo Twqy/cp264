@@ -1,0 +1,27 @@
+q1
+------------------
+Test: str_words
+
+str_words(Abc  DEF):2
+str_words(  aBc   Def   ):2
+str_words(Toonie is the Canadian $2 coin. ):5
+str_words(Binary has 10 digits.  ):3
+
+------------------
+Test: str_lower
+
+str_lower(Abc  DEF):abc  def
+str_lower(  aBc   Def   ):  abc   def   
+str_lower(Toonie is the Canadian $2 coin. ):toonie is the canadian $2 coin. 
+str_lower(Binary has 10 digits.  ):binary has 10 digits.  
+
+------------------
+Test: str_trim
+
+str_trim(Abc  DEF):Abc DEF
+str_trim(  aBc   Def   ): aBc Def
+str_trim(Toonie is the Canadian $2 coin. ):Toonie is the Canadian $2 coin.
+str_trim(Binary has 10 digits.  ):Binary has 10 digits.
+
+q2
+------------------
