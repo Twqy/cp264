@@ -1,0 +1,25 @@
+/**
+ * -------------------------------------
+ * @file  testing.txt
+ * Lab 4 Test Results File
+ * -------------------------------------
+ * @author ryan tran, 169609378, tran9378@mylaurier.ca
+ *
+ * @version 2024-02-03
+ *
+ 
+------------------------
+Test read_strings
+
+
+Contents of string array
+------------------------
+
+------------------------
+Test strings_with_substring
+
+Enter substring: last
+------------------------
+Test strings_length
+
+Enter the length comparison value: 2
