@@ -1,0 +1,84 @@
+------------------
+Test: select_sort
+
+select_sort(5 4 3 2 1): 2 3 4 5 1
+select_sort(3 1 4 1 5): 1 1 3 4 5
+select_sort(3 1 4 5 2 7 6 9 8 0): 1 2 3 4 5 6 7 8 9 0
+select_sort(1 4 2 8 5 7): 1 2 4 5 8 7
+
+------------------
+Test: quick_sort
+
+quick_sort(5 4 3 2 1): 1 2 3 4 5
+quick_sort(3 1 4 1 5): 1 1 3 4 5
+quick_sort(3 1 4 5 2 7 6 9 8 0): 0 1 2 3 4 5 6 7 8 9
+quick_sort(1 4 2 8 5 7): 1 2 4 5 7 8
+
+------------------
+Test: my_sort
+
+my_sort(5 4 3 2 1): 5 4 3 2 1
+my_sort(3 1 4 1 5): 5 4 3 1 1
+my_sort(3 1 4 5 2 7 6 9 8 0): 9 8 7 6 5 4 3 2 1 0
+my_sort(1 4 2 8 5 7): 8 7 5 4 2 1
+
+------------------
+Test: grade
+
+grade(45.7): F
+grade(50.0): D-
+grade(55.0): D
+grade(59.0): D+
+grade(61.0): C-
+grade(63.0): C
+grade(67.2): C+
+grade(72.0): B-
+grade(76.0): B
+grade(79.0): B+
+grade(80.5): A-
+grade(85.0): A
+grade(93.6): A+
+
+------------------
+Test: import_data
+
+import_data():10
+A1        10.0
+A2        20.0
+A3        30.0
+A4        40.0
+A5        50.0
+A6        60.0
+A7        70.0
+A8        80.0
+A9        90.0
+A10       100.0
+
+------------------
+Test: process_data
+
+count     10
+mean      55.0
+stddev    28.7
+median    55.0
+
+------------------
+Test: report_data
+
+Stats:value
+Count:10
+Mean:55.0
+Standard Deviation:28.7
+Median:55.00
+
+name:score,grade
+A10:100.0,A+
+A9:90.0,A+
+A8:80.0,A-
+A7:70.0,B-
+A6:60.0,C-
+A5:50.0,D-
+A4:40.0,F
+A3:30.0,F
+A2:20.0,F
+A1:10.0,F

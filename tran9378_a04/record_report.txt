@@ -1,0 +1,17 @@
+Stats:value
+Count:10
+Mean:55.0
+Standard Deviation:28.7
+Median:55.00
+
+name:score,grade
+A10:100.0,A+
+A9:90.0,A+
+A8:80.0,A-
+A7:70.0,B-
+A6:60.0,C-
+A5:50.0,D-
+A4:40.0,F
+A3:30.0,F
+A2:20.0,F
+A1:10.0,F
