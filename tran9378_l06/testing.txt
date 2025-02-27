@@ -1,0 +1,113 @@
+/**
+ * -------------------------------------
+ * @file  testing.txt
+ * Lab 6 Test Results File
+ * -------------------------------------
+ * @author Ryan Tran, 169069378, tran9378@mylaurier.ca
+ *
+ * @version 2025-01-06
+ *
+ * -------------------------------------
+ */
+
+-------------------------------------
+Initialize stack
+
+Testing: queue_linked
+queue_linked* source = queue_initialize()
+OK
+queue_empty(&source)
+  with source = count: 0, front > NULL
+OK
+queue_empty(&source)
+  with source = count: 3, front > 9 > 2 > 6 > NULL
+OK
+queue_count(&source)
+  with source = count: 0, front > NULL
+OK
+queue_count(&source)
+  with source = count: 3, front > 9 > 2 > 6 > NULL
+OK
+queue_peek(&source, &item)
+  with source = count: 0, front > NULL
+OK
+queue_peek(&source, &item)
+  with source = count: 1, front > 5 > NULL
+OK
+queue_peek(&source, &item)
+  with source = count: 3, front > 9 > 2 > 6 > NULL
+OK
+queue_insert(source, item)
+  with:
+  source = count: 0, front > NULL
+  item: 99
+OK
+queue_insert(source, item)
+  with:
+  source = count: 3, front > 9 > 2 > 6 > NULL
+  item: 99
+OK
+queue_remove(source, item)
+  with:
+  source = count: 0, front > NULL
+OK
+queue_remove(source, item)
+  with:
+  source = count: 1, front > 99 > NULL
+OK
+queue_remove(source, item)
+  with:
+  source = count: 3, front > 9 > 2 > 6 > NULL
+OK
+Mark: 13 / 13
+-------------------------------------
+Initialize queue
+ 
+
+ Testing: queue_linked
+queue_linked* source = queue_initialize()
+OK
+queue_empty(&source)
+  with source = count: 0, front > NULL
+OK
+queue_empty(&source)
+  with source = count: 3, front > 9 > 2 > 6 > NULL
+OK
+queue_count(&source)
+  with source = count: 0, front > NULL
+OK
+queue_count(&source)
+  with source = count: 3, front > 9 > 2 > 6 > NULL
+OK
+queue_peek(&source, &item)
+  with source = count: 0, front > NULL
+OK
+queue_peek(&source, &item)
+  with source = count: 1, front > 5 > NULL
+OK
+queue_peek(&source, &item)
+  with source = count: 3, front > 9 > 2 > 6 > NULL
+OK
+queue_insert(source, item)
+  with:
+  source = count: 0, front > NULL
+  item: 99
+OK
+queue_insert(source, item)
+  with:
+  source = count: 3, front > 9 > 2 > 6 > NULL
+  item: 99
+OK
+queue_remove(source, item)
+  with:
+  source = count: 0, front > NULL
+OK
+queue_remove(source, item)
+  with:
+  source = count: 1, front > 99 > NULL
+OK
+queue_remove(source, item)
+  with:
+  source = count: 3, front > 9 > 2 > 6 > NULL
+OK
+Mark: 13 / 13
