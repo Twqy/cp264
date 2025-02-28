@@ -1,0 +1,57 @@
+Test: infix_to_postfix
+
+infix_to_postfix(1+2): 1 2 +
+infix_to_postfix((1+2*3)): 1 2 3 * +
+infix_to_postfix(10-((3*4)+8)/4): 10 3 4 * 8 + 4 / -
+
+------------------
+Test: evaluate_postfix
+
+evaluate_postfix(1 2 +): 3
+evaluate_postfix(1 2 3 * +): 7
+evaluate_postfix(10 3 4 * 8 + 4 / -): 5
+
+------------------
+Test: evaluate_infix
+
+evaluate_infix(1+2): 3
+evaluate_infix((1+2*3)): 7
+evaluate_infix(10-((3*4)+8)/4): 5
+
+------------------
+Test: enqueue
+
+enqueue((): (
+enqueue(2): ( 2
+enqueue(+): ( 2 +
+enqueue(3): ( 2 + 3
+enqueue()): ( 2 + 3 )
+enqueue length: 5
+------------------
+Test: dequeue
+
+enqueue: ( 2 + 3 )
+dequeue((): 2 + 3 )
+dequeue(2): + 3 )
+dequeue(+): 3 )
+dequeue(3): )
+dequeue()):
+
+------------------
+Test: push
+
+push(1): 1
+push(2): 2 1
+push(+): + 2 1
+push(3): 3 + 2 1
+push(a): a 3 + 2 1
+stack length: 5
+------------------
+Test: pop
+
+stack: a 3 + 2 1
+pop(a): 3 + 2 1
+pop(3): + 2 1
+pop(+): 2 1
+pop(2): 1
+pop(1):
