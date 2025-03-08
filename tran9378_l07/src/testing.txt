@@ -1,0 +1,20 @@
+empty: true
+full:  false
+count: 0
+Insert test values:
+  count: 8, height: 4, items:
+11
+7
+6
+9
+8
+15
+12
+18
+
+empty: false
+full:  false
+count: 8
+leaf_count: 4
+balanced: false
+inorder:   
