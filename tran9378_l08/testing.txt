@@ -1,0 +1,36 @@
+/**
+ * -------------------------------------
+ * @file  testing.txt
+ * Lab 8 Test Results File
+ * -------------------------------------
+ * @author ryan , 169069378, tran9378@mylaurier.ca
+ *
+ * @version 2025-01-06
+ *
+ * -------------------------------------
+ */
+
+empty: true
+full:  false
+count: 0
+Insert test values:
+  count: 8, height: 4, items:
+1
+1
+1
+1
+2
+1
+1
+1
+2
+
+empty: false
+inorder:   {8, 9, 6, 18, 7, 8, 9, 6, }
+valid: AVL_BAD_CHILDREN
+valid: AVL_HEIGHT_VIOLATION
+valid: AVL_BAD_CHILDREN
+valid: AVL_NOT_BALANCED
+Remove 11:
+  removed: 11
+inorder:  {8, 9, 6, 18, 7, 8, 9, 6, }
